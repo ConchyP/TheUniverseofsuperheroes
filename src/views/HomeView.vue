@@ -4,7 +4,7 @@
 
 <template>
   <main>
-    <Header/>
+    
   </main>
 </template>
 <style>

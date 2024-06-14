@@ -1,10 +1,11 @@
 <script setup>
 
+import Footer from './components/Footer.vue';
 </script>
 
 <template>
   <header>
-   
+
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
@@ -18,18 +19,12 @@
       </nav>
     </div>
   </header>
-
-  <RouterView />
+  <div>
+    <Footer />
+  </div>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
-
-
-
+<style>
 nav {
   width: 100%;
   font-size: 20px;
