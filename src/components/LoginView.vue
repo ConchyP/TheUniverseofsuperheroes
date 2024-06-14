@@ -4,7 +4,8 @@
 
 <template>
   <main>
-    <Header/>
+    <h1>This is a Login Page</h1>
+    
   </main>
 </template>
 <style>
