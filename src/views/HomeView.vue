@@ -21,6 +21,7 @@ heroesStore.get()
           {{ heroe.id }}
           {{ heroe.powerstats }}
           {{ heroe.appearance }}
+          
         </li>
         <li> </li>
       </ul>
