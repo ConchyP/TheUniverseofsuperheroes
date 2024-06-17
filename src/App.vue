@@ -1,7 +1,7 @@
 <script setup>
-
 import HomeView from './views/HomeView.vue';
 import Footer from './components/Footer.vue';
+import Card from './components/Card.vue';
 import { RouterLink, RouterView } from 'vue-router'
 
 </script>
@@ -23,6 +23,9 @@ import { RouterLink, RouterView } from 'vue-router'
   </div>
 
 
+<div>
+  <Card />
+</div>
 
   <div>
     <Footer />
