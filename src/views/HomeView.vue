@@ -1,5 +1,6 @@
 <script setup>
 import { userHeroesStore } from '@/stores/superheroes';
+import Card from '../components/Card.vue';
 
 const heroesStore = userHeroesStore()
 
@@ -9,6 +10,11 @@ heroesStore.get()
 
 <template>
   <main>
+
+    <div>
+    <Card />
+    </div>
+
     <div v-if="heroesStore.isLoading">
 
       <div>{{ heroesStore.superHeroes[0].name }}</div>
