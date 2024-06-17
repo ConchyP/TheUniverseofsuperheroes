@@ -15,6 +15,14 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink to="/humans">Humans</RouterLink>
       </nav>
   </header>
+    
+  <div>
+<HomeView />
+
+  </div>
+
+
+
 
   <div>
     <Footer />
