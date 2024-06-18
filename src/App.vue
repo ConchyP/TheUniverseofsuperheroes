@@ -1,35 +1,24 @@
 <script setup>
-import HomeView from './views/HomeView.vue';
-import Footer from './components/Footer.vue';
-import Card from './components/Card.vue';
-import { RouterLink, RouterView } from 'vue-router'
-
+import HomeView from "./views/HomeView.vue";
+import Footer from "./components/Footer.vue";
+import Card from "./components/Card.vue";
+import { RouterLink, RouterView } from "vue-router";
 </script>
 
 <template>
   <header>
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-        <RouterLink to="/login">Login</RouterLink>
-        <RouterLink to="/favorites">Favorites</RouterLink>
-        <RouterLink to="/humans">Humans</RouterLink>
-      </nav>
+    <nav>
+      <RouterLink to="/">Home</RouterLink>
+      <RouterLink to="/about">About</RouterLink>
+      <RouterLink to="/login">Login</RouterLink>
+      <RouterLink to="/favorites">Favorites</RouterLink>
+      <RouterLink to="/humans">Humans</RouterLink>
+    </nav>
   </header>
-    
-  <div>
-<HomeView />
 
-  </div>
+  <RouterView />
 
-
-<div>
-  <Card />
-</div>
-
-  <div>
-    <Footer />
-  </div>
+  <Footer />
 </template>
 
 <style>
