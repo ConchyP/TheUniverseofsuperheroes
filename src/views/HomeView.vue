@@ -12,19 +12,31 @@ heroesStore.get()
 <template>
   <main>
 
-    <div v-if="heroesStore.isLoading">
-    <Card v-for="heroe in heroesStore.superHeroes" :heroe="heroe"/>
+    <div id="list" v-if="heroesStore.isLoading" class="d-flex flex-row flex-wrap">
+      <div v-for="heroe in heroesStore.superHeroes" class="col-md-3 mb-4">
+        <Card :heroe="heroe" />
+      </div>
     </div>
-    <div v-else> Loading </div>
+    <div v-else> Loading></div>
   </main>
 </template>
 
-<style>
+<style lang="scss">
 @media (min-width: 1024px) {
   .about {
     min-height: 100vh;
     display: flex;
     align-items: center;
   }
+}
+
+body {
+  
+  .img {
+    opacity: 0.4;
+  }
+  background-image: url("../assets/img/backgroundimg.jpg");
+  background-size: 100%;
+  background-repeat: repeat;
 }
 </style>
