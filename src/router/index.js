@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import LoginView from '../components/LoginView.vue'
-import FavoritesView from '../components/FavoritesView.vue'
-import HumansView from '../components/HumansView.vue'
+import LoginView from '../views/LoginView.vue'
+import FavoritesView from '../views/FavoritesView.vue'
+import HumansView from '../views/HumansView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -18,7 +18,7 @@ const router = createRouter({
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import('../components/LoginView.vue')
+      component: () => import('../views/LoginView.vue')
     },
     {
       path: '/favorites',
@@ -26,7 +26,7 @@ const router = createRouter({
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import('../components/FavoritesView.vue')
+      component: () => import('../views/FavoritesView.vue')
     },
     {
       path: '/humans',
@@ -34,8 +34,13 @@ const router = createRouter({
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import('../components/HumansView.vue')
-    }
+      component: () => import('../views/HumansView.vue')
+    },
+    {
+      path: '/register',
+      name: 'register',
+      component: () => import('../views/RegisterView.vue')
+    },
   ]
 })
 
