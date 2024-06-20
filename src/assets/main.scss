@@ -1,7 +1,7 @@
 @import "bootstrap/scss/bootstrap";
 
 body {
-  margin: 0;
+  margin: 40px;
   padding: 0;
 
   main {
@@ -11,3 +11,15 @@ body {
     margin-top: 5%;
   }
 } 
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  
+  
+     .card {
+   width: 100%;
+  
+  }
+}
