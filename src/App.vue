@@ -1,8 +1,8 @@
 <script setup>
-
-import Footer from './components/Footer.vue';
-import { RouterLink, RouterView } from 'vue-router'
-
+import HomeView from "./views/HomeView.vue";
+import Footer from "./components/Footer.vue";
+import Card from "./components/Card.vue";
+import { RouterLink, RouterView } from "vue-router";
 </script>
 
 <template>
@@ -21,6 +21,7 @@ import { RouterLink, RouterView } from 'vue-router'
     <Footer />
   </div>
   <RouterView />
+
 </template>
 
 <style>

@@ -17,6 +17,7 @@ export const userHeroesStore = defineStore('heroes', () => {
 
             if (response.status == 200) {
                 superHeroes.value = data
+                console.log(superHeroes.value);
                 isLoading.value = true
             }
 
