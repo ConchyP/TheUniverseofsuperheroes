@@ -7,7 +7,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="">
+
   <div class="card" style="width: 18rem">
     <img :src="heroe.images.lg" class="card-img-top" alt="..." />
     <div class="card-body">
@@ -34,23 +34,16 @@ const props = defineProps({
       <a href="#" class="btn btn-primary">Favorites</a>
     </div>
   </div>
-  </div>
 </template>
 
 <style scoped lang="scss">
 
 
-// .container {
-//   display: grid;
-//   grid-template-columns: repeat(4, 1fr);
-//   gap: 1rem;
+.card-body {
+  
+  background: rgb(244, 61, 61);
 
-
-//     .card {
-//   width: 100%;
- 
-// } 
-// }
+}
   
   
   
