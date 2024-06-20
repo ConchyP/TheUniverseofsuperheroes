@@ -7,18 +7,21 @@ import { RouterLink, RouterView } from "vue-router";
 
 <template>
   <header>
-    <nav>
-      <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/about">About</RouterLink>
-      <RouterLink to="/login">Login</RouterLink>
-      <RouterLink to="/favorites">Favorites</RouterLink>
-      <RouterLink to="/humans">Humans</RouterLink>
-    </nav>
+      <nav>
+        <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/register">Register</RouterLink>
+       
+        <RouterLink to="/login">Login</RouterLink>
+        <RouterLink to="/favorites">Favorites</RouterLink>
+        <RouterLink to="/humans">Humans</RouterLink>
+        
+      </nav>
   </header>
-
+  <div>
+    <Footer />
+  </div>
   <RouterView />
 
-  <Footer />
 </template>
 
 <style>
