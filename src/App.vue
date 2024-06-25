@@ -2,6 +2,7 @@
 import HomeView from "./views/HomeView.vue";
 import Footer from "./components/Footer.vue";
 import Card from "./components/Card.vue";
+import Pagination from "./components/Pagination.vue";
 import { RouterLink, RouterView } from "vue-router";
 </script>
 
@@ -17,9 +18,9 @@ import { RouterLink, RouterView } from "vue-router";
         
       </nav>
   </header>
-  <div>
+    
     <Footer />
-  </div>
+  <!--  Se llama a paginacion?  -->
   <RouterView />
 
 </template>
