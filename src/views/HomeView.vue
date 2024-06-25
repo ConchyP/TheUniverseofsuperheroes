@@ -1,7 +1,9 @@
 <script setup>
 import { userHeroesStore } from '@/stores/superheroes';
 import Card from '../components/Card.vue';
+import Pagination from '../components/Pagination.vue';
 import { onBeforeMount } from 'vue';
+
 
 const heroesStore = userHeroesStore()
 
@@ -18,6 +20,7 @@ heroesStore.get()
       </div>
     </div>
     <div v-else> Loading></div>
+    <Pagination /> 
   </main>
 </template>
 
