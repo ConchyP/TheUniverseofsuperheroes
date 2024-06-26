@@ -2,6 +2,7 @@
 import { userHeroesStore } from '@/stores/superheroes';
 import Card from '../components/Card.vue';
 import Pagination from '../components/Pagination.vue';
+import ScrollUpButton from '../components/ScrollUpButton.vue';
 import { onBeforeMount } from 'vue';
 
 
@@ -21,6 +22,7 @@ heroesStore.get()
     </div>
     <div v-else> Loading></div>
     <Pagination /> 
+    <ScrollUpButton />
   </main>
 </template>
 
