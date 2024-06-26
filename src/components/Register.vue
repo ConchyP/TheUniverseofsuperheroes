@@ -1,48 +1,46 @@
 <script setup>
- import { ref } from 'vue';
- import { useUserStore } from '@/stores/userRegistration.js';
+import { ref } from 'vue';
+import { useRouter } from 'vue-router';
+import { useAuthStore } from '../stores/auth';
 
+const router = useRouter();
+const authStore = useAuthStore();
 const username = ref('');
 const password = ref('');
-const userStore = useUserStore();
-const coders = userStore.coders;
+const errorMessage = ref('');
 
-const register = () => {
-  const newUser = {
-    username: username.value,
-    password: password.value,
-  };
-  userStore.addUser(newUser);
-  username.value = '';
-  password.value = '';
-}; 
+const handleSubmit = async () => {
+  try {
+    await authStore.register(username.value, password.value);
+    router.push('/login');
+  } catch (error) {
+    errorMessage.value = error.message;
+  }
+};
 </script>
 
 <template>
-
-  <div>
-    <div class="form-container">
-      <form @submit.prevent="register">
-        <p>Please register here</p>
-        <label for="username">username</label>
-        <input type="text" name="username" id="username" v-model="username">
-
-        <label for="password">password</label>
-        <input type="password" name="password" id="password" v-model="password">
-
-        <button type="submit" class="btn btn-primary">Submit</button>
-        
+  <main>
+    <div class="register">
+      <form @submit.prevent="handleSubmit">
+        <div>
+          <input v-model="username" type="text" id="username" placeholder="Enter your username" required />
+        </div>
+        <div>
+          <input v-model="password" type="password" id="password" placeholder="Password" required />
+        </div>
+        <button type="submit" class="register-btn">Register</button>
+        <p v-if="errorMessage" class="error">{{ errorMessage }}</p>
       </form>
-        
-    </div> 
-  </div>
+    </div>
+  </main>
 </template>
 
 <style lang="scss" scoped>
 
 
 /* Contenedor principal para centrar el formulario */
-.form-container {
+.register {
   display: flex;
   justify-content: center;
   align-items: center;
