@@ -10,6 +10,7 @@ export const userHeroesStore = defineStore('heroes', () => {
 
     async function get () {
 
+        
         try {
             isLoading.value = false
             const response = await fetch(uri + 'all.json')
