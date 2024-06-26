@@ -1,5 +1,6 @@
 <script setup>
-
+import Favorites from '@/components/Favorites.vue';
+import Favorites from '@/components/Favorites.vue';
 </script>
 
 <template>
