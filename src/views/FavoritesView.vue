@@ -1,16 +1,12 @@
 <script setup>
-import Favorites from '@/components/Favorites.vue';
-
 
 </script>
 
 <template>
-  <div>
-    <Favorites />
-  </div>
-   
+  <main>
+    <h1>This is a Favorites Page</h1>
     
- 
+  </main>
 </template>
 
 <style>
