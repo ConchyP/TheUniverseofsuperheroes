@@ -1,5 +1,6 @@
 import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
+import { useFavoritesStore } from "../stores/favorites.js"; 
 
 export const userHeroesStore = defineStore('heroes', () => {
     
