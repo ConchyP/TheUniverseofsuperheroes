@@ -1,9 +1,31 @@
 <script setup>
 import { ref, onMounted, defineProps } from "vue";
+import { defineStore } from 'pinia'
+import { useFavoritesStore } from "../stores/favorites.js"; 
 
 const props = defineProps({
   heroe: Object
 })
+
+const favoritesStore = useFavoritesStore();
+
+const addToFavorites = () => {
+  favoritesStore.addFavorite(props.heroe);
+};
+
+
+
+// const addToFavorites = () => {
+//   // Aquí puedes agregar la lógica para manejar la adición a favoritos
+//   console.log(`Agregando a ${props.heroe.name} a favoritos`);
+// };
+
+// // Opcional: Si necesitas realizar alguna acción cuando el componente se monta
+// onMounted(() => {
+//   console.log('Componente montado');
+// });
+
+
 </script>
 
 <template>
@@ -31,7 +53,8 @@ const props = defineProps({
         {{ heroe.powerstats.combat }}
       </p>
 
-      <a href="#" class="btn btn-primary">Favorites</a>
+      <button class="btn btn-primary" @click="addToFavorites">Favorites</button>
+      <!-- <button class="btn btn-primary" >Favorites</button> -->
     </div>
   </div>
 </template>
