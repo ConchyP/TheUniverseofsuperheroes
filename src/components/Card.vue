@@ -14,18 +14,6 @@ const addToFavorites = () => {
 };
 
 
-
-// const addToFavorites = () => {
-//   // Aquí puedes agregar la lógica para manejar la adición a favoritos
-//   console.log(`Agregando a ${props.heroe.name} a favoritos`);
-// };
-
-// // Opcional: Si necesitas realizar alguna acción cuando el componente se monta
-// onMounted(() => {
-//   console.log('Componente montado');
-// });
-
-
 </script>
 
 <template>
@@ -100,6 +88,5 @@ img{
   
   
   
-
 
 </style>

@@ -7,6 +7,7 @@ import Favorites from '@/components/Favorites.vue';
   <main>
     <h1>This is a Favorites Page</h1>
     
+    <Favorites />
   </main>
 </template>
 

@@ -1,4 +1,4 @@
-import { reactive } from 'vue';
+// import { reactive } from 'vue';
 import { defineStore } from 'pinia'
 
 
@@ -19,17 +19,3 @@ export const useFavoritesStore = defineStore('favorites', {
   });
 
 
-// export const stores = reactive({
-//   favorites: []
-// });
-
-// export function useStore() {
-//   const addToFavorites = (heroe) => {
-//     if (!stores.favorites.some(favorite => favorite.id === heroe.id)) {
-//       stores.favorites.push(heroe);
-//       console.log(`Agregado a favoritos: ${heroe.name}`);
-//     }
-//   };
-
-//   return { store, addToFavorites };
-// }
