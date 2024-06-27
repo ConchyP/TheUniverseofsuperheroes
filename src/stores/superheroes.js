@@ -18,7 +18,7 @@ export const userHeroesStore = defineStore('heroes', () => {
             const data = await response.json()
 
             if (response.status == 200) {
-                superHeroes.value = data
+                superHeroes.value = data.slice(0,20)
                 console.log(superHeroes.value);
                 isLoading.value = true
             }
