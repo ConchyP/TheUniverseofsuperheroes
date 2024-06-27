@@ -10,6 +10,8 @@ const heroesStore = userHeroesStore()
 
 heroesStore.get()
 
+// vfor id
+
 </script>
 
 <template>
