@@ -12,6 +12,7 @@ const favoritesStore = useFavoritesStore();
 const addToFavorites = () => {
   favoritesStore.addFavorite(props.heroe);
 };
+
 </script>
 
 <template>
@@ -95,4 +96,5 @@ img {
 
   margin-top: 10px;
 }
+
 </style>
