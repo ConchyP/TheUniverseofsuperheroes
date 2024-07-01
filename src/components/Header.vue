@@ -24,9 +24,10 @@
 <style lang="scss" scoped>
 
 header {
+  margin-top: 0%;
   background: linear-gradient(45deg, #FF0000, #0000FF);
-  padding: 10px 20px; 
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+  padding: 10px 20px;
   
 }
 
@@ -48,7 +49,6 @@ nav {
   width: 100%;
   font-size: 10px;
   text-align: center;
-  margin-top: 10rem;
   display: flex;
   justify-content: space-around; 
   align-items: center; 
