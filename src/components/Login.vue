@@ -41,7 +41,7 @@ const handleSubmit = async () => {
 
 
 <style scoped lang="scss">
-.form-container { 
+.login { 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,7 +52,7 @@ const handleSubmit = async () => {
 
 /* Estilo del formulario */
 form {
-  background: #E94242;
+  background: #4253e9;
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -89,7 +89,7 @@ form button {
   transition: background-color 0.3s;
 
   &:hover {
-    background-color: #1120ee
+    background-color: #ee1111
   }
 }
 </style>
