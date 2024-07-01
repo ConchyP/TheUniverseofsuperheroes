@@ -14,7 +14,10 @@ export const useUserStore = defineStore('userRegistration', () => {
  
 
   return { coders, addUser, };
-});
+}); 
+
+
+
 
 //define store  es una función de Pinia que se utiliza para crear un store
 // JSON.parse se utiliza para recuperar y convertir los datos almacenados en localStorage de vuelta a un formato utilizable (un array de objetos).
