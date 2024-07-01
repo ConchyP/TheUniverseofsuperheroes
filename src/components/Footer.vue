@@ -34,7 +34,7 @@ onUnmounted(() => {
 <style scoped>
 .footer {
   width: 100%;
-  background-color: #f07e7e;
+  background: linear-gradient(45deg, #FF0000, #0000FF);
   color: white;
   padding: 15px 0;
   text-align: center;

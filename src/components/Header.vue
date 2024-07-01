@@ -39,6 +39,7 @@ header {
   width: 50%;
   height: 150px;
   background:transparent;
+  margin-left: 25%;
   
 
 }
