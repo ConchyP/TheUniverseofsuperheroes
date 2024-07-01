@@ -15,7 +15,7 @@ export const useAuthStore = defineStore("auth", {
       }
       this.users.push({ username, password });
     },
-    async login(username, password) {
+     login(username, password) {
       const user = this.users.find(
         (user) => user.username === username && user.password === password
       );
