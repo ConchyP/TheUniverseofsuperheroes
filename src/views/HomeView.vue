@@ -14,7 +14,7 @@ heroesStore.get()
 
 <template>
   <main>
-    <button>Favorites</button>
+    
     <div id="list" v-if="heroesStore.isLoading" class="d-flex flex-row flex-wrap">
       <div v-for="heroe in heroesStore.superHeroes" class="col-md-3 mb-4">
         <Card :heroe="heroe" />
