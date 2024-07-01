@@ -13,7 +13,9 @@ const removeHeroe = (id) => {
 </script>
 
 <template>
+ 
      <div>
+      
       <div v-for="heroe in favorites" :key="heroe.id">
     <Card :heroe="heroe" />
     <button @click="removeHeroe(heroe.id)">Remove from Favorites</button>

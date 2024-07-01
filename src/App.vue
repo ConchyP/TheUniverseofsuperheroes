@@ -25,8 +25,8 @@ import { RouterLink, RouterView } from "vue-router";
 
 </template>
 
-<style>
-nav {
+<!-- <style>
+/* nav {
   width: 100%;
   font-size: 20px;
   text-align: center;
@@ -76,5 +76,5 @@ nav a:first-of-type {
     padding: 1rem 0;
     margin-top: 1rem;
   }
-}
-</style>
+}  */
+</style> -->
